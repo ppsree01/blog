@@ -46,4 +46,4 @@ The above function now runs in O(n) time at the cost of O(n) space (for the mem 
 
 Our computer when running the second code instead:
 
-![computer](https://cdn.vox-cdn.com/uploads/chorus_asset/file/8689467/gatsby.gif)
+![computer](https://c.tenor.com/j9RiUvoQK5YAAAAM/cheers-leonardo-dicaprio.gif)
