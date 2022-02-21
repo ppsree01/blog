@@ -1,3 +1,6 @@
+[MAIN-MENU](../../README.md)  
+[GO-BACK](../index.md)
+
 # A Brief Understanding of the Principles of Dynamic Programming:
 
 ## What is it?
