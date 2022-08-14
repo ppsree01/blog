@@ -4,13 +4,8 @@ metaTitle: 'Maximum Profit by buying and selling a stock over a given day range'
 metaDesc: 'Get the maximum profit obtained by buying and selling a stock over a given day range'
 socialImage: images/22-09-2021.png
 date: '2022-08-13'
-tags:
-  - leetcode
+tags: ['leetcode', 'arrays']
 ---
-
-# Calculating the maximum profit obtained by buying and selling a stock over a given day range:
-
-[Home](../../README.md)
 
 Given an array that represents the starting price of a given stock over a given day range, how do we find the maximum profit one can obtain by buying and selling the stock within the above range? 
 
