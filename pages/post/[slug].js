@@ -33,7 +33,7 @@ export async function getStaticProps({ params: { slug } }) {
         <h1>{frontmatter.title}</h1>
         <Image className='w-full' height={1000} width={2000} src={`/${frontmatter.socialImage ?? 'images/default.png' }`} />
         <div className='px-6 pt-4 pb-2'>{frontmatter.tags.map((item) => (
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{item}</span>
+          <span key={item} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{item}</span>
         ))}</div>
         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       </div>
