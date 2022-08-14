@@ -1,32 +1,33 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import fs from 'fs';
 import matter from 'gray-matter';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home({ posts }) {
 	return (
+
 		<div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
-		{posts.map(({ slug, frontmatter }) => (
-		  <div
-			key={slug}
-			className='border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'
-		  >
-			<Link href={`/post/${slug}`}>
-			  <a>
-				<Image
-				  width={650}
-				  height={340}
-				  alt={frontmatter.title}
-				  src={`/${frontmatter.socialImage}`}
-				/>
-				<h1 className='p-4'>{frontmatter.title}</h1>
-			  </a>
-			</Link>
-		  </div>
-		))}
-	  </div>
+			{posts.map(({ slug, frontmatter }) => (
+				<div
+					key={slug}
+					className='max-w-sm rounded overflow-hidden shadow-lg flex flex-col m-2'
+				>
+					<Link href={`/post/${slug}`}>
+						<a>
+							<img className="w-full h-60"
+								src={`/${frontmatter.socialImage ?? 'images/default.png'}`}
+								alt="Post Image" />
+							<div className="px-6 py-4">
+								<div className="font-bold text-xl mb-2 text-slate-700">{frontmatter.title.toUpperCase()}</div>
+								<p className="text-gray-500 text-base">
+									{frontmatter.metaDesc.split('').splice(0,100).join('') + '...'}
+								</p>
+							</div>
+						</a>
+					</Link>
+				</div>
+
+			))}
+		</div>
 	)
 }
 
@@ -36,16 +37,16 @@ export async function getStaticProps() {
 		const slug = fileName.replace('.md', '');
 		const readFile = fs.readFileSync(`posts/${fileName}`, 'utf-8');
 		const { data: frontmatter } = matter(readFile);
-		
+
 		return {
-		  slug,
-		  frontmatter,
+			slug,
+			frontmatter,
 		};
 	});
 
 	return {
 		props: {
-		  posts,
+			posts,
 		},
 	};
 }

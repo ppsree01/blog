@@ -1,10 +1,17 @@
 ---
-title: 'Maximum Profit by buying and selling a stock over a given day range'
-metaTitle: 'Maximum Profit by buying and selling a stock over a given day range'
-metaDesc: 'Get the maximum profit obtained by buying and selling a stock over a given day range'
-socialImage: images/22-09-2021.png
+title: 'Maximum Profit'
+metaDesc: 'Given an array that represents the starting price of a given stock over a given day range, find the maximum profit one can obtain by buying and selling the stock within the above range'
+# socialImage: images/22-09-2021.png
 date: '2022-08-13'
 tags: ['leetcode', 'arrays']
+
+# title: 'Next.js page options and how they work'
+# metaTitle: 'Next.js page options and how they work'
+# metaDesc: 'How to use pages in Next.js exploring the options'
+# socialImage: images/22-09-2021.png
+# date: '2021-09-22'
+# tags:
+#   - nextjs
 ---
 
 Given an array that represents the starting price of a given stock over a given day range, how do we find the maximum profit one can obtain by buying and selling the stock within the above range? 
