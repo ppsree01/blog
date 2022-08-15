@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Layout({ children }) {
 	return (
 		<div className='flex flex-col min-h-screen'>
-			<header className='mt-0 my-8 py-8'>
+			<header className='mt-0 lg:my-8 py-8'>
 				<div className='container mx-auto flex-1 justify-around'>
 					<Link href='/'>
 						<a className="text-xl font-bold ml-2 text-slate-700">HOME</a>
