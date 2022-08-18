@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from 'next/image';
 
 export default function Layout({ children }) {
 	return (
@@ -17,8 +16,6 @@ export default function Layout({ children }) {
 			<hr />
 			<footer className='pl-8 pr-8 mt-2 mb-2 py-4'>
 				<div className="sm:flex flex-col sm:items-center sm:justify-center">
-					{/* <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
-					</span> */}
 					<div className="mb-4 py-2 text-2xl font-bold text-slate-700">SREE LAKSHMI</div>
 					<div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
 						<a href="https://github.com/ppsree01" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-900">
